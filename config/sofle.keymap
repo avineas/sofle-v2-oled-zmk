@@ -125,7 +125,7 @@
 &kp ESC           &kp NUMBER_1  &kp N2   &kp N3     &kp N4    &kp N5                             &kp N6         &kp N7           &kp N8          &kp N9           &kp N0     &kp SQT
 &kp TAB           &kp Q         &kp W    &kp E      &kp R     &kp T                              &kp Z          &kp U            &kp I           &kp O            &kp P      &kp KP_PLUS
 &hyper            &kp A         &kp S    &kp D      &kp F     &kp G                              &kp H          &kp J            &kp K           &kp L            &braces    &kp UP_ARROW
-&left_shift_caps  &kp Y         &kp X    &kp C      &kp V     &kp B     &kp C_MUTE    &none      &kp N          &kp M            &kp COMMA       &kp DOT          &kp MINUS  &kp DOWN_ARROW
+&left_shift_caps  &kp Y         &kp X    &kp C      &kp V     &kp B     &kp K_MUTE    &none      &kp N          &kp M            &kp COMMA       &kp DOT          &kp MINUS  &kp DOWN_ARROW
                                 &kp F13  &sk LCTRL  &sk LALT  &sk LGUI  &kp SPACE     &kp ENTER  &kp BACKSPACE  &sk RIGHT_SHIFT  &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
 
