@@ -55,13 +55,6 @@
             bindings = <&sk LGUI &sk LSHFT &sk LALT &sk LCTRL>;
             label = "HYPER";
         };
-
-        caps_lock_bl: caps_lock_bl {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "CAPS_LOCK_BL";
-        };
     };
 
     behaviors {
