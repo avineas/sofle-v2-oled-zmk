@@ -51,9 +51,9 @@ layers:
   - .
   - '-'
   - DOWN ARROW
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
+  - AC NEXT KEYBOARD LAYOUT SELECT
   - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
   - {t: LGUI, h: sticky}
   - SPACE
   - ENTER
@@ -125,7 +125,7 @@ layers:
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - {t: BT, h: '1', type: held}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
@@ -173,7 +173,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -186,3 +186,5 @@ layers:
 combos:
 - p: [0, 50]
   k: {t: lower, h: sticky}
+- p: [2, 50]
+  k: {t: adjust, h: sticky}
