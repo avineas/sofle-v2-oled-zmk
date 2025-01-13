@@ -37,7 +37,7 @@ layers:
   - L
   - {t: '{', s: '}'}
   - UP ARROW
-  - {t: LSHFT, h: sticky}
+  - '&left_shift_caps'
   - Y
   - X
   - C
@@ -51,7 +51,7 @@ layers:
   - .
   - '-'
   - DOWN ARROW
-  - AC NEXT KEYBOARD LAYOUT SELECT
+  - F13
   - {t: LCTRL, h: sticky}
   - {t: LALT, h: sticky}
   - {t: LGUI, h: sticky}
@@ -61,8 +61,8 @@ layers:
   - {t: RIGHT SHIFT, h: sticky}
   - LEFT ARROW
   - RIGHT ARROW
-  lower:
-  - {type: held}
+  fn:
+  - {t: default, h: toggle, type: held}
   - F1
   - F2
   - F3
@@ -122,8 +122,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
-  - BT CLR
+  kb_settings:
+  - {t: default, h: toggle}
   - {t: BT, h: '0'}
   - {t: BT, h: '1', type: held}
   - {t: BT, h: '2'}
@@ -135,11 +135,11 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
+  - OUT TOG
   - RGB HUD
   - RGB HUI
   - RGB SAD
-  - RGB SAI
+  - RGB TOG
   - RGB EFF
   - ''
   - ''
@@ -149,7 +149,6 @@ layers:
   - ''
   - ''
   - {t: ESC, s: '`'}
-  - RGB BRI
   - ''
   - ''
   - ''
@@ -165,7 +164,8 @@ layers:
   - ''
   - ''
   - ''
-  - RGB TOG
+  - ''
+  - '&bl BL_TOG'
   - ''
   - ''
   - ''
@@ -177,14 +177,19 @@ layers:
   - ''
   - ''
   - ''
+  - BT CLR
   - ''
-  - ''
-  - ''
+  - BT CLR
   - ''
   - ''
   - ''
 combos:
 - p: [0, 50]
-  k: {t: lower, h: sticky}
+  k: {t: fn, h: sticky}
+  l: [default]
 - p: [2, 50]
-  k: {t: adjust, h: sticky}
+  k: {t: kb_settings, h: sticky}
+  l: [default, fn, kb_settings]
+- p: [50, 40]
+  k: F14
+  l: [default]
