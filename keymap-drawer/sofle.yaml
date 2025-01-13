@@ -12,20 +12,20 @@ layers:
   - '8'
   - '9'
   - '0'
-  - DELETE
+  - ''''
   - TAB
   - Q
   - W
   - E
   - R
   - T
-  - Y
+  - Z
   - U
   - I
   - O
   - P
-  - BSPC
-  - TAB
+  - KP PLUS
+  - '&hyper'
   - A
   - S
   - D
@@ -35,10 +35,10 @@ layers:
   - J
   - K
   - L
-  - ;
+  - {t: '{', s: '}'}
   - UP ARROW
   - {t: LSHFT, h: sticky}
-  - Z
+  - Y
   - X
   - C
   - V
@@ -49,20 +49,20 @@ layers:
   - M
   - ','
   - .
-  - /
+  - '-'
   - DOWN ARROW
-  - LGUI
-  - LALT
-  - LCTRL
-  - lower
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LGUI, h: sticky}
   - SPACE
   - ENTER
   - BACKSPACE
-  - RIGHT SHIFT
+  - {t: RIGHT SHIFT, h: sticky}
   - LEFT ARROW
   - RIGHT ARROW
   lower:
-  - {t: ▽, type: trans}
+  - {type: held}
   - F1
   - F2
   - F3
@@ -112,10 +112,10 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -148,7 +148,7 @@ layers:
   - ''
   - ''
   - ''
-  - RGB BRD
+  - {t: ESC, s: '`'}
   - RGB BRI
   - ''
   - ''
