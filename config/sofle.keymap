@@ -84,13 +84,6 @@
             mods = <(MOD_LCTL)>;
         };
 
-        encoder_backlight: encoder_backlight {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ENCODER_BACKLIGHT";
-            #sensor-binding-cells = <2>;
-            bindings = <&bl>, <&bl>;
-        };
-
         left_shift_caps: left_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_SHIFT_CAPS";
@@ -121,9 +114,7 @@
                                 &kp F13  &sk LCTRL  &sk LALT  &sk LGUI  &kp SPACE     &kp ENTER  &kp BACKSPACE  &sk RIGHT_SHIFT  &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp A A>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
@@ -145,9 +136,7 @@
                       &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans           &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp A A>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         kb_settings_layer {
@@ -162,14 +151,10 @@
             bindings = <
 &to 0         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                          &none       &none  &none  &none  &none  &none
 &out OUT_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF                       &none       &none  &none  &none  &none  &none
-&none         &gresc           &none            &none            &none            &none                                 &none       &none  &none  &none  &none  &none
+&none         &gresc           &none            &none            &bl BL_DEC       &bl BL_INC                            &none       &none  &none  &none  &none  &none
 &none         &none            &none            &none            &none            &none            &bl BL_TOG    &none  &none       &none  &none  &none  &none  &none
                                &none            &none            &none            &none            &bt BT_CLR    &none  &bt BT_CLR  &none  &none  &none
             >;
-
-            sensor-bindings =
-                <&encoder_backlight BL_INC BL_DEC>,
-                <&inc_dec_kp A A>;
         };
     };
 };
